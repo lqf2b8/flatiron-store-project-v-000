@@ -1,0 +1,3 @@
+<% if user_signed_in? && current_user.current_cart %>
+  <li> <%= link_to "Cart", cart_path(current_user.current_cart) %></li>
+<% end %>

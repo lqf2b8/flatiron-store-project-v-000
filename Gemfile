@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+
 group :test, :development do
   gem "rspec-rails"
   gem "capybara"
@@ -22,6 +23,7 @@ group :test, :development do
   gem "database_cleaner"
   gem "sqlite3"
   gem "pry"
+  gem "pry-doc"
   gem "guard-rspec", require: false
   gem "thin"
 end
@@ -29,3 +31,4 @@ end
 gem "bootstrap-sass", "~> 3.1.1"
 gem "faker"
 gem "friendly_id"
+gem "devise"

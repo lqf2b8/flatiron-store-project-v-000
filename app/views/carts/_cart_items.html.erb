@@ -1,0 +1,3 @@
+<% @cart.line_items.each do |line_item| %>
+  <p><%= link_to line_item.item.title, item_path(line_item.item) %> | <%= number_to_currency(line_item.item.price.to_f/100) %> | Quantity: <%= line_item.quantity %> | <strong> <%= line_item_inventory_msg(line_item) %> </strong></p>
+<% end %>
